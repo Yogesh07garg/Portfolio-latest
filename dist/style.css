@@ -67,3 +67,9 @@ nav a:hover:after,nav a.active:after{transform:scaleX(1)}
 @media(prefers-reduced-motion:reduce){.focus-strip{overflow-x:auto}.focus-track{animation:none;will-change:auto}.focus-group[aria-hidden="true"]{display:none}.marquee-toggle{display:none}}
 
 .research-stat strong [data-count-to]{font:inherit;color:inherit;letter-spacing:inherit;line-height:inherit;display:inline-block;margin:0;font-variant-numeric:tabular-nums}
+
+/* Project source link shares the existing action spacing and accent. */
+.project-actions{display:flex;align-items:center;flex-wrap:wrap;gap:0 25px}
+.project-source{display:inline-flex;align-items:center;gap:12px;margin-top:26px;padding-bottom:7px;border-bottom:1px solid #4d5346;font-size:12px}
+.project-source span{color:var(--accent);font-size:20px;transition:transform .3s}
+.project-source:hover span{transform:translate(2px,-2px)}

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#101110">
-<title>Yogesh Garg | Software Engineer</title>
-<meta name="description" content="Yogesh Garg's portfolio showcasing software engineering projects, full-stack web development, and technical skills.">
+<title>Yogesh Garg | Portfolio</title>
+<meta name="description" content="Explore Yogesh Garg's portfolio featuring software engineering, full-stack development, machine learning, and cloud engineering projects.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -60,8 +60,17 @@
 <div class="project-info"><div class="project-meta"><span>BACKEND / DEVOPS / AI</span><span>AUG 2026 — PRESENT</span></div><h3>AI DevOps<br>Incident Assistant</h3><p>A FastAPI backend that turns Docker and CI deployment failures into structured, AI-powered diagnostics using Gemini.</p><ul class="project-points"><li>Root cause, suggested fix, and confidence in consistent JSON.</li><li>Searchable incident history with PostgreSQL and SQLAlchemy.</li><li>Automated Docker builds and GHCR publishing via GitHub Actions.</li></ul><div class="tags"><span>React.js</span><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span><span>Gemini API</span></div><button class="detail-toggle" aria-expanded="false" aria-controls="incident-details">Explore the architecture <span>↗</span></button><div class="project-details" id="incident-details" hidden><p><strong>How it works</strong><br>Deployment failure → container logs → Gemini response_schema → structured diagnostics → PostgreSQL incident history → REST query endpoint.</p><p>GitHub Actions builds and pushes container images to GHCR on each push.</p></div></div>
 </article>
 <article class="project reveal">
+<div class="project-visual incident-visual" aria-label="Illustrative machine learning workflow for FraudGuard">
+<div class="mini-top"><span><i></i> FRAUD DETECTION WORKFLOW</span><span>02</span></div>
+<div class="log-lines"><span><em>VALIDATE</em> transaction data</span><span><em>SCALE</em> Time &amp; Amount</span><span><em>TRAIN</em> fit classifiers</span></div>
+<div class="diagnostic"><div><span class="spark">&#10035;</span><b>From data to decisions.</b></div><p>Precision <span>&middot;</span> Recall <span>&middot;</span> F1</p><div class="tags"><span>HELD-OUT EVALUATION</span></div></div>
+<div class="visual-bottom"><span>PREPROCESS</span><b>&rarr;</b><span>CLASSIFY</span><b>&rarr;</b><span>EVALUATE</span></div>
+</div>
+<div class="project-info"><div class="project-meta"><span>MACHINE LEARNING / APPLIED AI</span></div><h3>FraudGuard</h3><p>An end-to-end machine learning project focused on detecting potentially fraudulent financial transactions using data preprocessing, feature engineering, classification models, and model evaluation.</p><ul class="project-points"><li>Validates transaction data and scales Time and Amount features.</li><li>Compares Logistic Regression and Random Forest classifiers.</li><li>Selects thresholds on validation data and evaluates on a held-out test set.</li></ul><div class="tags"><span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>NumPy</span><span>Machine Learning</span></div><div class="project-actions"><button class="detail-toggle" aria-expanded="false" aria-controls="fraudguard-details">Explore the architecture <span>&#8599;</span></button><a class="project-source" href="https://github.com/Yogesh07garg/FraudGuard" target="_blank" rel="noopener noreferrer" aria-label="View FraudGuard on GitHub">GitHub <span aria-hidden="true">&#8599;</span></a></div><div class="project-details" id="fraudguard-details" hidden><p><strong>How it works</strong><br>Transaction CSV &rarr; data validation &rarr; stratified train, validation, and test splits &rarr; feature scaling and model training &rarr; validation-based model and threshold selection &rarr; held-out evaluation.</p><p>The selected Scikit-learn pipeline and threshold are saved for inference. Evaluation includes precision, recall, F1, average precision, and a confusion matrix.</p></div></div>
+</article>
+<article class="project reveal">
 <div class="project-visual infra-visual" aria-label="Illustration of Terraform infrastructure across development, staging, and production">
-<div class="mini-top"><span><i></i> INFRASTRUCTURE AS CODE</span><span>02</span></div>
+<div class="mini-top"><span><i></i> INFRASTRUCTURE AS CODE</span><span>03</span></div>
 <div class="terraform-symbol">◇</div><div class="infra-title">One configuration.<br>Three environments.</div>
 <div class="environments"><div><span>01</span><b>dev</b><i></i></div><div><span>02</span><b>staging</b><i></i></div><div><span>03</span><b>production</b><i></i></div></div>
 <div class="visual-bottom"><span>INIT</span><b>→</b><span>PLAN</span><b>→</b><span>APPLY</span></div>
